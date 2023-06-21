@@ -1,0 +1,171 @@
+body {
+  background-image: linear-gradient(100deg, #1b1b1b, rgb(137, 137, 245), #6621ce);
+  height: 660px;
+  background-size: 500%;
+}
+
+h1 {
+  background-image: linear-gradient(30deg, black, rgb(179, 32, 216), rgb(77, 77, 211));
+  color: dark;
+  text-align: center;
+  font-size: 40px;
+  font-family: "neural BRK";
+  margin: 86px;
+  border: solid 5px rgb(0, 0, 0);
+  border-radius: 80px;
+  padding: 20px;
+
+}
+
+p {
+  font-family: "cantarell extra bold";
+  font-size: 200x;
+  text-align: center;
+  background-image: linear-gradient(160deg, lightblue -30%, rgba(255, 0, 0, 0) 50%, rgb(238, 0, 255) 160%);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  margin: 5px;
+  border: solid 3px rgb(0, 0, 0);
+  border-radius: 35px;
+  padding: 10px;
+
+}
+
+h2 {
+  font-family: "arial";
+  font-size: 25px;
+  text-align: center;
+  background-image: linear-gradient(100deg, rgb(181, 111, 255), rgb(0, 91, 147));
+  color: rgb(0, 0, 0);
+  margin: 25px;
+  border: solid 3px rgba(0, 0, 0, 0.701);
+  border-radius: 35px;
+  padding: 10px;
+
+
+}
+
+h3 {
+  font-family: "neural BRK";
+  font-size: 25px;
+  text-align: right;
+  color: black;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+}
+
+
+.container-nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: rgb(23, 23, 23);
+  border-radius: 20px;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+
+li>a {
+  padding: 8px 24px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+
+.button-menu-toggle {
+  display: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+
+
+  .nav-links {
+    display: none;
+  }
+
+
+  .button-menu-toggle {
+    display: block;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0 24px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color: rgba(20, 20, 20, 0.95);
+    width: 100%;
+    height: 100%;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap: 70px;
+    font-size: 40px;
+
+
+  }
+}
